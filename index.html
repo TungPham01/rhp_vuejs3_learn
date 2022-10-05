@@ -8,7 +8,11 @@
 </head>
 <body>
     vuejs3
+    <section id="contact">
+        <h1>hello {{ teamName }} and {{ !isHello ? firstName + lastName : '' }}</h1>
+        <button v-on:click="firstName = 'Linh'">Change name</button>
+    </section>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script stc="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
